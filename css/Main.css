@@ -1,0 +1,1002 @@
+@font-face{
+font-family:"TheSans B3Light";
+src: url("../fonts/tssptt3_-webfont_3.eot#iefix");
+src: url("../fonts/tssptt3_-webfont_3.eot#iefix") format("eot"), url("../fonts/tssptt3_-webfont_3.woff") format("woff"), url("../fonts/tssptt3_-webfont_3.ttf") format("truetype"), url("../fonts/tssptt3_-webfont_3.svg#tssptt3_-webfont") format("svg");
+}
+
+@font-face{
+font-family:"TheSans B6SemiBold";
+src: url("../fonts/tssptt5_-webfont_3.eot#iefix");
+src: url("../fonts/tssptt5_-webfont_3.eot#iefix") format("eot"), url("../fonts/tssptt5_-webfont_3.woff") format("woff"), url("../fonts/tssptt5_-webfont_3.ttf") format("truetype"), url("../fonts/tssptt5_-webfont_3.svg#tssptt5_-webfont") format("svg");
+}
+
+/*Reset*/
+html{-webkit-text-size-adjust:none;}
+*{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;-ms-box-sizing:border-box;box-sizing:border-box;}
+button, html input[type="button"], input[type="reset"], input[type="submit"], input[type="text"] {-webkit-appearance: none; border-radius:0;}
+img{border:0;}
+
+/* Common CSS */
+body{color:#515151;padding:0;margin:0;font-family:"TheSans B3Light",Arial, Helvetica, sans-serif;;font-size:14px;line-height:18px;}
+body > .mainWrapper {display: none;}
+
+input[type="text"], select{color:#333333;font-size:14px;padding:5px;margin:0; }
+a{color:#4e96ce;text-decoration:none;}
+a:visited{color:#92b4ad;}
+a:hover,a:focus,a:active{color:#4e96ce;text-decoration:none;}
+ul, ul li{list-style:none;margin:0;padding:0;}
+.Wrapper{float:left;width:100%;overflow:hidden\9;}
+.viewfr{*width:110px;height:27px\0/;}
+.mainWrapper{float:left;width:100%;min-height:1100px;}
+.mainWrapperLarge{float:left;width:100%;}
+.noPointer{cursor:default !important;}
+.refreshButton, .headingRight ul li.facebook a, .headingRight ul li.twitter a, .headingRight ul li.linkdin a, .headingRight ul li.googleP a, .exchangeDetails span.showMoreExchange, .snapDropdown, .saveButton, .shareWrapper ul li.facebook a, .shareWrapper ul li.twitter a, .shareWrapper ul li.linkdin a, .shareWrapper ul li.googleP a, .icon-charttp1, .icon-charttp2, .icon-charttp3, .icon-charttpS, .tabMenu span.arrowClick, .tabStockperfomance span.tabStockperfomanceClick, .tabhistoricshareprice span.tabhistoricsharepriceClick, .date-picker-icn, .subOptions .releases span, .subOptions .calendars span, .subOptions .rns span, .subOptions .dividends span, .subOptions .reports span {background-image:url(../images/icons.png); background-repeat:no-repeat;}
+.fl{text-align:left;float:left;}
+.fr{float:right; color:#fff; font-family:'Open Sans',sans-serif;}
+.cl{clear:both;}
+.no-margin{padding:0 !important;}
+.no-padding{padding:0 !important;}
+.no-bold {font-weight:normal !important;}
+.no-pointer {cursor: default !important;}
+
+/* Heading Section */
+.headingSection{float:left;width:100%;line-height:22px;padding:0 0 6px;margin:0;}
+.headingSection h1{color:#515151;font-size:40px;letter-spacing:-1px;margin:0;padding:5px 0 0 1%;line-height:40px;float:left;font-family:"TheSans B6SemiBold",Arial, Helvetica, sans-serif;width:100%; }
+.refWrapper{float:left;padding:0 15px 0 0;}
+.refreshButton{float:right;margin:9px 0 0 0;padding:0;background-position:-243px 0;width:27px;height:29px;cursor:pointer;}
+.refreshText{float:right;padding:14px 0 0 8px;margin:0;font-size:20px;cursor:pointer; font-family:"TheSans B6SemiBold",Arial, Helvetica, sans-serif; color:#4e96ce;}
+.headingRight{float:right;font-size:20px;}
+.sharingLabel{float:left;padding:14px 0 0 0;}
+.headingRight ul{float:left;list-style:none;padding:9px 10px 0; display:none;}
+.headingRight ul li{float:left;padding:0 5px 0 0;}
+.headingRight ul li a {float:left;width:28px;height:29px;margin:0;padding:0;}
+.headingRight ul li.facebook a {background-position:-156px 0px;}
+.negative{color:red;}
+.positive{color:green;}
+.headingRight ul li.twitter a {background-position:-185px 0;}
+.headingRight ul li.linkdin a {background-position:-214px 0;}
+.headingRight ul li.googleP a {background-position:-272px 0;}
+
+/**********Snapshot styling**********/
+
+/* Tab Styling */
+.exchangeSelect{float:left;width:100%;padding:0;margin:0;border-bottom:1px solid #d3d3d4;}
+.exchangeSelect ul{float:left;width:100%;border-bottom:1px solid #DDDDDD;display:none;position:absolute;z-index:10;background:#fff;top:117px; left:0;-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.6);-moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.6);box-shadow:0 1px 2px rgba(0, 0, 0, 0.6);}
+.exchangeSelect ul li{float:left;width:100%;*width:99%;text-align:left;color:#515151;font-size:48px;padding:10px 0 5px 1%;cursor:pointer;border-bottom:1px solid #e5e5e5;}
+.exchangeSelect ul li span{color:#515151;font-size:24px;border-right:1px solid #DDDDDD;float:left;padding:11px 2% 15px 2%;cursor:pointer;}
+.exchangeSelect ul li span.first{padding-left:0;}
+.exchangeSelect ul li:hover{}
+.exchangeSelect ul li a{float:left;line-height:24px;padding:17px 0;width:100%;color:#515151;font-size:40px;}
+.exchangeSelect ul li a:hover{text-decoration:none;}
+.exchangeSelect ul li.selected a, .exchangeSelect ul li:hover a{color:#515151;}
+.exchangeSelect ul li.selected a{}
+div.currentexchange{color:#515151;font-size:20px;line-height:50px;float:left;cursor:pointer;padding:0;width:85%;}
+div.currentexchange a{display:block; padding:0 0 10px 1%; font-size:30px; font-weight:bold; color:#92b4ad;}
+div.currentexchange div span{background:#ebebeb;color:#9f9fa3;font-size:14px;line-height:30px;border-right:1px solid #DDE8DE;float:left;border-bottom:4px solid #ebebeb;padding:4px 3% 4px;cursor:pointer;}
+div.currentexchange div span:last-child {border-right:none;}
+div.currentexchange div span.selected{background:#e3e3e3;color:#000;border-bottom:4px solid #92b4ad;cursor:default; margin-bottom:-2px; font-family:"TheSans B6SemiBold",Arial, Helvetica, sans-serif;}
+.exchangeDetails span.showMoreExchange{float:right;background-position:-193px -77px;width:16px;height:14px;cursor:pointer;margin:5px 2% 34px 0;padding:0; display:none;}
+.exchangeDetails span.showMoreExchange.expanded{background-position:-193px -63px;}
+.snapshotWrapper{float:left;width:100%;background:#fff;border-radius:5px 5px 0 0;position:relative;}
+.exchangeListWrapper{float:left;width:100%;border-bottom:1px solid #DDE8DE;}
+.exchangeDetails{float:right;width:15%;padding:63px 1% 0 0;cursor:pointer; font-family:'Open Sans',sans-serif;}
+.exchangeDetails span{float:right;padding:0 2% 0 0;width:98%;text-align:right;}
+.exchangeListWrapper1{display:none;float:left;width:100%;box-shadow:0 5px 10px #999;background:#fff;position:absolute;top:82px;z-index:10;}
+.lightBg{opacity:0.4;}
+.snapData{float:left;width:100%;padding:0 0 5px 0;border-bottom:1px solid #d3d3d4;font-size:14px;line-height:19px;}
+.lastValueBox{float:left;width:40%;padding:0 0 0 1%; font-family:'Open Sans',sans-serif;}
+.lastLabel{color:#000;float:left;font-size:55px;line-height:64px;padding:10px 0 0 0; font-weight:bold;}
+.changeData{float:left;padding:20px 0 0 2%;}
+.otherValueBox{float:left;width:60%;*width:58.5%;padding:20px 0 0 0;}
+.otherValueBox-outer, .otherValueBox-data{float:left;width:50%;*width:45%;padding:0 2% 0 2%;text-align:right;}
+.otherValueBox-data{font-family:'Open Sans',sans-serif;}
+.otherValueBox-lable{float:left;width:50%;*width:46%;font-weight:bold; text-align:left;}
+.otherValueBox .fl{font-weight:bold;}
+.chartBaseToday{float:left;width:100%;height:470px;background:#fff url(../images/today_768.png) center no-repeat;}.chartBaseToday img{width:100%;}
+.chartBaseHistory{float:left;width:100%;height:520px;background:#fff url(../images/history_768.png) center no-repeat;}.chartBaseToday img{width:100%;}
+.dayChangeWrapper{float:left;width:99%;*width:97.9%;padding:0 0.5% 0 1%;font-weight:400;font-size:14px;}
+.dayChangeLowLabel{color:#515151;width:2%;float:left;padding:8px 0;text-align:left;}
+.dayChangeHighLabel{color:#515151;width:2%;float:left;padding:8px 0;text-align:right;}
+.dayChangeImgStatus{position:absolute;left:50%;margin-left:-4px;margin-top:2px;}
+.dayChangeChart{float:left;padding:12px 0;width:91%;height:11px;position:relative;}
+.dayChangeChart .dayChangeHighValue{float:left;width:49.9%;height:11px;background:#e3e3e3;}
+.dayChangeChart .dayChangeLowValue{float:left;width:49.9%;height:11px;background:#92b4ad;}
+.dayChangeLabel{float:left;padding:8px 0;width:5%;text-align:right;}
+.topTableWrapper{float:left;width:100%;*width:99%;position:relative; padding-right:1%;}
+.snapTableLink{float:left;width:100%;padding:7px 0 9px 1%;font-weight:400;color:#515151;cursor:pointer;}
+.snapTableLink span.fl{float:left;width:75%;font-weight:bold; color:#4e96ce;}
+.underline{text-decoration:underline;}
+.snapDropdown{cursor:pointer;float:right;height:9px;text-align:right;width:11px;background-position:-213px -77px;margin-top:5px;margin-right:2px;}
+.snapDropdown.show{background-position:-213px -67px;}
+.snapTableDetails{background:#92b4ad;float:left;width:100%;*width:99%;padding:0 1%;box-shadow:0 5px 10px #333;border-top:1px solid #d3d3d4;display:none;position:absolute;top:34px;left:0;z-index:7;}
+.shareDetails, .marketDetails{float:left;width:50%;*width:43.5%;padding:0 3%}
+.shareDetails div, .marketDetails div{border-bottom:1px solid #d3d3d4;padding:11px 0 6px;width:100%;float:left;}
+.snapTableDetails .right{float:left;width:50%;color:#515151;font-weight:bold;}
+.snapTableDetails .fl{float:left;width:50%;color:#fff; font-weight:bold;}
+.snapTableDetails .shareDetails .right{width:45%;padding:0 5% 0 0;}
+.snapTableDetails .marketDetails .fl{width:45%;padding:0;}
+
+/* Tab Styling */
+.tabMenu{float:left;width:100%;padding:0;margin:0;}
+.tabMenu ul{float:left;width:100%;border-bottom:1px solid #D3D3D4;/*border-top:1px solid #DDDDDD;*/display:block;}
+.tabMenu ul li{float:left;width:50%;*width:50%;text-align:center;background:#e3e3e3;/*box-shadow:0 18px 13px -17px #666666 inset;*/border-right:1px solid #fff;}
+.tabMenu ul li.selected,.tabMenu ul li:hover{background:#92b4ad;}
+.tabMenu ul li a{font-size:14px;float:left;line-height:24px;padding:17px 0;width:100%;color:#515151; font-family:"TheSans B6SemiBold",Arial, Helvetica, sans-serif;}
+.tabMenu ul li.selected a, .tabMenu ul li:hover a{color:#fff;}
+.tabMenu ul li a:hover{text-decoration:none;}
+.tabMenu span.hideforDesktop{background-color:#92b4ad;color:#fff;float:left;font-size:18px;line-height:24px;padding:17px 1% 19px 2%;width:95%;cursor:pointer;}
+.tabMenu span.arrowClick{width:11px;padding:17px 0;height:24px;float:right;cursor:pointer;background-color:#92b4ad;background-position:-276px -151px;margin-right:1%;}
+.tabMenu span.arrowClick.show{background-position:-276px -115px;}
+.hideforDesktop{display:none;}
+
+/* Stock Perfomance Tab Styling */
+.tabStockperfomance{float:left;width:100%;padding:0;margin:0;}
+.tabStockperfomance ul{float:left;width:100%;border-bottom:1px solid #00418C;border-top:1px solid #DDDDDD;display:block;}
+.tabStockperfomance ul li{float:left;width:50%;*width:49%;text-align:center;background:#EEEEEE;box-shadow:0 18px 13px -17px #666666 inset;border-right:1px solid #fff;}
+.tabStockperfomance ul li.selected,.tabStockperfomance ul li:hover{background:#00418C;}
+.tabStockperfomance ul li a{font-size:14px;float:left;line-height:24px;padding:17px 0;width:100%;}
+.tabStockperfomance ul li.selected a, .tabStockperfomance ul li:hover a{color:#fff;}
+.tabStockperfomance ul li a:hover{text-decoration:none;}
+.tabStockperfomance span.hideforDesktop{background:#00418C;color:#fff;float:left;font-size:18px;line-height:24px;padding:17px 1% 19px;width:95%;cursor:pointer;}
+.tabStockperfomance span.tabStockperfomanceClick{width:11px;padding:17px 0;height:24px;float:right;cursor:pointer;background-color:#00418C;background-position:-276px -132px;margin-right:5px;}
+.tabStockperfomance span.tabStockperfomanceClick.show{background-position:-276px -95px;}
+
+/* Perfomance Data Styling */
+.stockperformance{float:left;width:100%;}
+.stockperformance .sectionHeading{color:#000;font-size:14px;line-height:24px;background:#F3F3F3;border-bottom:1px solid #DDDDDD;float:left;margin-bottom:1px;padding:15px 1% 10px;width:100%;*width:97.7%;text-transform:uppercase;}
+.stockperformance .perfomanceTable{float:left;width:100%;}
+.stockperformance .headers, .stockperformance .datarow{float:left;width:100%;border-top:1px solid #fff;border-bottom:1px solid #DDD;}
+.stockperformance .headers{cursor:pointer;*height:70px;}
+.stockperformance .headerslbl{float:left;}
+.stockperformance .headers .sorting{float:right;display:block;padding:5px 2px 0 10px;}
+.stockperformance .headers div.first, .stockperformance .datarow div.first{width:15%;*width:11%;float:left;font-weight:bold;}
+.stockperformance .headers > div > a{float:right;display:block;}
+.stockperformance .headers div, .stockperformance .datarow > div{width:12%;float:left;padding:10px 1% 10px 0%;text-align:right;}
+.stockperformance .headers div:last-child, .stockperformance .datarow div:last-child {width:13%;}
+.perfomanceTable .active, .datarow:hover{background:#e7e7e7;}
+.stockper-datacol1{text-align:left !important;padding:10px 0 10px 1% !important;}.stockper-datacol1 a.stockper-datacol1 img{float:left !important;padding:0 0 0 2px !important;}
+
+/* Historic Share Price*/
+.historicshareprice-mainnavi{float:left;width:100%;padding:0;margin:0;}
+.historicshareprice-mainnavi ul{float:left;width:100%;border-bottom:1px solid #00418C;border-top:1px solid #DDDDDD;display:block;}
+.historicshareprice-mainnavi ul li{float:left;width:50%;*width:49.8%;text-align:center;background:#EEEEEE;box-shadow:0 18px 13px -17px #666666 inset;border-right:1px solid #fff;}
+.historicshareprice-mainnavi ul li.selected,.historicshareprice-mainnavi ul li:hover{background:#00418C;}
+.historicshareprice-mainnavi ul li a{font-size:14px;float:left;line-height:24px;padding:17px 0;width:100%;}
+.historicshareprice-mainnavi ul li.selected a, .historicshareprice-mainnavi ul li:hover a{color:#fff;}
+.historicshareprice-mainnavi ul li a:hover{text-decoration:none;}
+.historicshareprice{float:left;width:100%;}
+.historicshareprice .sectionHeading{color:#000;font-size:14px;line-height:24px;background:#F3F3F3;border-bottom:1px solid #DDDDDD;float:left;margin-bottom:1px;padding:15px 1% 10px;width:100%;*width:98%;text-transform:uppercase;}
+.perfomanceTable{float:left;width:100%;}
+.historicshareprice .headers{border-bottom:1px solid #ccc;background:#EBEBEB;float:left;width:100%;border-top:1px solid #fff;cursor:pointer;*height:40px;}
+.historicshareprice .datarow{float:left;width:100%;border-top:1px solid #fff;border-bottom:1px solid #DDD;}.historicshareprice .datarow:hover{background:#e7e7e7;}
+.historicshareprice .headers .sorting{float:right;display:none;padding:5px 2px 0 10px;}
+.historicshareprice .headers div.first, .historicshareprice .datarow div.first{width:20%;*width:18%;float:left;font-weight:bold;}
+.historicshareprice .headers > div > a{float:right;display:block;}
+.historicshareprice .headers div, .historicshareprice .datarow > div{width:16%;float:left;padding:10px 1% 10px 1%;text-align:right;}
+.historicshareprice .headers div, .datarow div{width:16%;float:left;}
+.perfomanceTable .first{text-align:left !important;padding:10px 0 10px 1% !important;}
+.perfomanceTable .first a{float:left !important;padding:0 0 0 2px !important;margin-top:-2px;}
+.perfomanceTable .first img{float:left !important;padding:0 0 0 2px !important;}
+
+/* Perfomance Tab Styling */
+.tabhistoricshareprice{float:left;width:100%;padding:0;margin:0;}
+.tabhistoricshareprice ul{float:left;width:100%;border-bottom:1px solid #00418C;border-top:1px solid #DDDDDD;display:block;}
+.tabhistoricshareprice ul li{float:left;width:20%;*width:19.8%;text-align:center;background:#EEEEEE;box-shadow:0 18px 13px -17px #666666 inset;border-right:1px solid #fff;}
+.tabhistoricshareprice ul li.selected,.tabhistoricshareprice ul li:hover{background:#00418C;}
+.tabhistoricshareprice ul li a{font-size:14px;float:left;line-height:24px;padding:9px 0 9px;width:100%;}
+.tabhistoricshareprice ul li.selected a, .tabhistoricshareprice ul li:hover a{color:#fff;}
+.tabhistoricshareprice ul li a:hover{text-decoration:none;}
+.tabhistoricshareprice span.hideforDesktop{background:#00418C;color:#fff;float:left;font-size:18px;line-height:24px;padding:17px 1% 19px;width:95%;cursor:pointer;}
+.tabhistoricshareprice span.tabhistoricsharepriceClick{width:11px;padding:17px 0;height:24px;float:right;cursor:pointer;background:url("../images/icons.png") repeat;background-color:#00418C;background-position:-277px -133px;margin-right:5px;}
+.tabhistoricshareprice span.tabhistoricsharepriceClick.show{background-position:-277px -94px;}
+.hideforDesktop{display:none;}
+
+/* Comparative Data Styling */
+.section{border-radius:0 0 5px 5px;float:left;width:100%;*width:99.90%;margin-bottom:10px;}
+.subHeading{float:left;margin-bottom:1px;/*background:#ccc;border-top:solid 1px #ccc;*/border-bottom:solid 1px #d3d3d4;color:#92b4ad;font-weight:bold;font-size:16px;line-height:20px;padding:5px 0 9px 0; font-family:"TheSans B6SemiBold",Arial, Helvetica, sans-serif;}
+.comparatorWrapper{float:left;width:100%;*width:99.9%;border-radius:0 0 5px 5px;}
+.sectionHeading{color:#fff ;font-size:16px;font-weight:bold;line-height:24px;border-bottom:1px solid #d3d3d4;border-top:1px solid #d3d3d4;float:left;margin-bottom:1px;padding:7px 1% 6px 1%;width:100%;*width:98%;/*text-transform:uppercase;*/ font-family:"TheSans B6SemiBold",Arial, Helvetica, sans-serif; background:#92b4ad;}
+.saveButton{cursor:pointer;color:#515151;float:right;height:23px;text-align:right;background-position:right -31px;padding:0 33px 0 0;font-size:14px;font-weight:400;line-height:18px;text-transform:capitalize;}
+.comparatorDetails{float:left;width:100%;background:#fff;}
+.collapsecon{float:left;width:100%;}
+.comparatorDetails .subHeading{width:100%;padding:7px 0 5px 2%;}
+
+.PeerDiv{display:none;}
+.ShareDiv, .IndicesDiv{width:50% !important;}
+.shareSection{float:left;width:33.33%;*width:33%;}
+.shareItem{background:#fff;float:left;padding:4px 0 4px 2%;width:100%;/*border-bottom:1px solid #EEEEEE;*/margin-bottom:1px;min-height:25px;cursor:pointer;}
+.shareItemButton{background:#fff;width:23px;height:23px;border:#cccccc solid 1px;float:left;}
+.shareItemLabel{color:#515151;font-weight:400;font-size:14px;padding:3px 0 0 9px;float:left;}
+.MainShare {font-weight:bold !important;}.shareItem.checked{cursor:default;}
+.shareItem.checked .shareItemButton{background:#49C0E0;}
+#lower-graph .shareItemButton{border-radius:12px;}
+
+/* Advanced Option Styling */
+.advOptionWrapper{float:left;width:100%;}
+.showAdvOptions{float:left;width:100%;}
+.advOptionWrapper .snapTableLink{background:#F3F3F3;border-bottom:1px solid #DDDDDD;box-shadow:0 5px 10px #999999;margin-bottom:15px;}
+
+/* Order Depth Section Styling */
+.odHeaders{float:left;width:100%;}
+.odWrapper .sectionHeading .left{float:left;width:75%;}
+.odWrapper .sectionHeading .fullleft{float:left;}
+.odWrapper .sectionHeading .right{float:right;width:20%;text-align:right;}
+.odWrapper .subHeading{width:50%;*width:48.9%;padding:6px 0 6px 1%;}
+.odWrapper .subHeading.right{padding:6px 1% 6px 0;text-align:right;}
+.odData{float:left;width:100%;*width:98%;padding:7px 1% 7px;color:#515151;font-weight:400;background:#fff;border-bottom:1px solid #d3d3d4;margin-bottom:1px;border-right:2px solid #fff; font-family:'Open Sans',sans-serif;}
+.bidWrapper, .askWrapper{float:left;width:50%;*width:48.5%}
+.bidWrapper .odChart{float:right;}
+.askWrapper .right{text-align:right;}
+.askWrapper .odChart{background:#e3e3e3;border-left:2px solid #fff;}
+.bidaskouter{width:100%;float:left;}
+.odTime{float:left;width:25%;padding-top:3px;}
+.odMap{float:left;width:75%; position:relative;}
+.odLabel{float:left;padding-top:3px;position:absolute;}
+.odLabel.left{padding-left:2%;margin-right:-60px; min-width:80px; margin-right:-80px;}
+.odLabel.right{padding-right:2%;text-align:right;margin-left:-80px; min-width:80px;}
+.odChart{background:#92b4ad;float:left;width:75%;height:25px;}
+.hideDesktop{display:none;}
+
+/* Trade Section Styling */
+.tradeHeaders{float:left;width:100%; font-family:}
+.tradeHeaders .subHeading{padding:7px 1% 5px 1%;text-align:right;}
+.tradeData{color:#515151;font-weight:400;float:left;min-height:25px;padding:0;width:100%;line-height:18px; font-family:'Open Sans',sans-serif;}
+.tradeData > span{background:#fff;float:left;padding:10px 1%;border-bottom:1px solid #d3d3d4;margin-bottom:1px;text-align:right;}
+.tradeData span img{padding:0;*padding:5px 0 0 0;}
+.changeImgRow{text-align:center;}
+.tradeData.first span{/*background:#f3f3f3;*/font-weight:bold;}
+.timeRow{width:13%;text-align:left !important;}
+.lastRow{width:20%;*width:18%;}
+.changeRow{width:15%;*width:14%;}
+.changePerRow{width:17%;*width:16%;}
+.changeImgRow{width:14%;text-align:left;}
+.volumeRow{width:21%;*width:18.5%;}
+.tradeWrapper .sectionHeading .left{float:left;width:75%;}
+.tradeWrapper .sectionHeading .right{float:right;width:20%;text-align:right;}
+
+/* Trades by Broker Styling */
+.subSection .subHeading{float:left;padding:6px 0 5px 2%;width:100%;*width:98%;}
+.subSection .col1{padding-left:6%;}
+.subSection{float:left;width:50%;*width:49.99%;}
+.brokerHeaders{float:left;padding:6px 0;width:100%;background:#ff0000;color:#515151;}
+.brokerHeaders span{float:left;padding:0 2% 0 2%;width:33.3%;font-weight:400;text-align:right;}
+/*.brokerHeaders .cols{padding-right:6%;}*/
+.brokerHeaders .col1{padding-left:6% !important;}
+.brokerData{float:left;padding:0;width:100%;}
+.brokerData span{float:left;padding:10px 2% 10px 0%;width:33.3%;*width:31%;background:#F3F3F3;border-bottom:1px solid #EEEEEE;margin-bottom:1px;color:#515151;font-weight:400;text-align:right;}	
+.brokerData .cols{padding-right:6%;}
+.brokerData .col1{padding-left:6% !important;}
+.brokerData span.right{text-align:right;}
+.brokerData span.left{color:#515151;text-align:left;}
+.brokerHeaders .first, .brokerData .first{text-align:left !important;padding-left:2%;}
+.chartindicator{font-size:16px;color:#515151;padding:0 5px 0 0;line-height:10px;}
+	
+/* Sharing Styling */
+.shareWrapper{float:left;width:100%;*width:98%;padding:5px 1% 15px; text-align:center; display:none;}
+.shareWrapper ul{display:inline-block;}
+.shareWrapper ul li{float:left;padding:0 5px;}
+.shareWrapper ul li a{float:left;height:46px;margin:0;padding:0;width:45px;}
+.shareWrapper ul li.facebook a {background-position:0px 0px;}
+.shareWrapper ul li.twitter a {background-position:-48px 0;}
+.shareWrapper ul li.linkdin a {background-position:-96px 0;}
+.shareWrapper ul li.googleP a {background-position:0px -117px;}
+
+/* Disclaimer Styling */
+.disclaimerWrapper{float:left;width:100%;*width:98%;padding:10px 1%;background:#e3e3e3;border-radius:5px;margin:0 0 10px 0;}
+.compName{font-weight:bold;font-size:18px;line-height:24px;}
+
+/* Pagination Styling */
+.pagination{margin:10px 0 10px;float:left;width:100%;text-align:right; padding-right:1%;}
+.pagination ul{display:inline-block;*display:inline;margin-bottom:0;margin-left:0;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px;*zoom:1;-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.05);-moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.05);box-shadow:0 1px 2px rgba(0, 0, 0, 0.05);padding:0;margin:0;}
+.pagination ul > li{display:inline;}
+.pagination ul > li > a, .pagination ul > li > span{float:left;padding:4px 12px;line-height:20px;text-decoration:none;background-color:#aeaeae;border-bottom: 1px solid #8e8e8e;border-left-width:0;margin:0 2px;}
+.no-touch .pagination ul > li > a:hover, .pagination ul > li > a:focus, .pagination ul > .active > a, .pagination ul > .active > span{background-color:#00418C;color:#fff;}
+.pagination ul > li > a, .pagination ul > .active > a, .pagination ul > .active > span{color:#fff;cursor:default;}
+.pagination ul > .disabled > span, .pagination ul > .disabled > a, .pagination ul > .disabled > a:hover, .pagination ul > .disabled > a:focus{color:#fff;cursor:default;}
+.pagination ul > li:first-child > a, .pagination ul > li:first-child > span{border-left-width:1px;}
+
+/* Date Range Styling */
+.daterange{float:left;width:98%;*width:97%;padding:6px 0 5px 1%; margin:0 1%; border-bottom:1px solid #fff;/*background:#F5F5F5;*/}
+.daterange .datesec{float:left;}
+.daterange .datepickertext{width:100px; background:#fff; border:1px solid #ccc; color:#000; }
+.dateto{font-size:14px; text-transform:capitalize;color:#000;}
+.go{background:#92b4ad;color:#fff; border:none; padding:4px 3px; width:auto; font-weight:bold; font-size:14px;}
+.go:hover{cursor:pointer;}
+
+/* Sub Menu Styling */
+.subMenu .ulTimeHorizonChart li {width:13.2857%;}
+.subMenu{float:left;width:100%;*width:98%;padding:10px 1% 0 1%;margin:0;}
+.subMenu ul{float:left;width:100%;border-bottom:1px solid #fff; font-family:"TheSans B6SemiBold",Arial, Helvetica, sans-serif;}
+.subMenu ul li{float:left;width:15.944%;*width:12.1%;text-align:center;background:#e3e3e3;border-right:1px solid #fff;border-bottom:1px solid #D3D3D4;}
+.subMenu ul li:last-child {border-right:none;width:20.2857%;}
+.subMenu ul li.selected, .subMenu ul li:hover{background:#92b4ad;border-bottom:1px solid #D3D3D4; color:#FFF;}
+.subMenu ul li a{font-size:14px;float:left;padding:8px 0 4px 0;width:100%; color:#515151;}
+.subMenu ul li.selected a, .subMenu ul li:hover a{color:#fff;}
+.subMenu ul li a:hover{text-decoration:none;}
+.subOptions{float:left;width:100%;padding:0;margin:0;background:#F5F5F5;border-bottom:2px solid #fff;border-top:2px solid #fff;}
+.subOptions ul{float:left;width:100%;*width:98%;}
+.subOptions ul li{float:left;width:20%;*width:19.5%;text-align:center;;border-right:1px solid #fff; border-bottom:1px solid #ddd;}
+.subOptions ul li:last-child {border-right:none;}
+.subOptions ul li:hover{background-color:#00418C; border-bottom:1px solid #00418C;}
+.subOptions ul li a{font-size:16px;float:left;padding:16px 0;width:100%;}
+.subOptions ul li.selected a, .subOptions ul li:hover a{color:#fff;}
+.subOptions ul li a:hover{text-decoration:none;}
+.subOptions .inactive{background-color:#F5F5F5 !important;}
+.subOptions .inactive a{color:#000 !important;}
+.subOptions .active{background-color:#00418C !important;}
+.subOptions .active a{color:#fff !important;}
+.subOptions .releases span, .subOptions .calendars span, .subOptions .rns span, .subOptions .dividends span, .subOptions .reports span {height:28px; display:inline-block; vertical-align:middle;}
+.subOptions .releases span {background-position:-36px -57px; width:22px;}
+.subOptions .calendars span {background-position:-65px -59px; width:22px;}
+.subOptions .dividends span {background-position:-96px -59px; width:23px;}
+.subOptions .rns span {background-position:-125px -59px; width:29px;}
+.subOptions .reports span {background-position:-155px -61px; width:23px;}
+
+.datesec{float:right;text-align:right;}.datepickertext{width:20%;}
+.chartOpt{float:right;width:285px;padding-right:1%;}
+.chartOp-wrapper{float:right;/*width:110px;*/width:auto;height:30px;}
+.sectionHeading .wrapper-dropdown-3{text-transform:none;font-size:14px;}
+.sectionHeading .left{float:left;/*width:40%;*width:35%;*/display:block;}
+.sectionHeading .leftfull{float:left;width:100%;*width:99%;display:block;}
+.wrapper-dropdown-3{position:relative;width:100%;*width:80%;margin:0;padding:1px 22px 2px 5px;cursor:pointer;outline:none;float:left;}
+.wrapper-dropdown-3:after{content:url(../images/arrow_down_small.png);width:0;height:0;position:absolute;right:17px;top:18%;}
+.fr .wrapper-dropdown-3:after{top:0 !important;}
+.wrapper-dropdown-3up:after{content:url(../images/arrow_up_small.png);}
+.wrapper-dropdown-3 .dropdown{position:absolute;*width:95%;top:100%;left:0;right:0;background:white;-webkit-transition:all 0.1s ease-in;-moz-transition:all 0.1s ease-in;-ms-transition:all 0.1s ease-in;-o-transition:all 0.1s ease-in;transition:all 0.1s ease-in;list-style:none;/* Hiding */ opacity:0;pointer-events:none;-webkit-box-shadow: 0px 0px 2px 0px rgba(50, 50, 50, 0.75);-moz-box-shadow:0px 0px 2px 0px rgba(50, 50, 50, 0.75);box-shadow:0px 0px 2px 0px rgba(50, 50, 50, 0.75);z-index:5; display:none;}
+.wrapper-dropdown-3 .dropdown li a, .wrapper-dropdown-3 span li a{display:block;padding:5px 10px;text-decoration:none;border-bottom:1px solid #e6e8ea;box-shadow:inset 0 1px 0 rgba(255,255,255,1);-webkit-transition:all 0.3s ease-out;-moz-transition:all 0.3s ease-out;-ms-transition:all 0.3s ease-out;-o-transition:all 0.3s ease-out;transition:all 0.3s ease-out;float:left;width:100%;*width:86%;}
+.wrapper-dropdown-3 .dropdown li i, .wrapper-dropdown-3 span a i{float:left;color:inherit;width:auto; /*width:31px;height:28px;*/}
+.wrapper-dropdown-3 .dropdown li span, .wrapper-dropdown-3 span a span{padding:9px 0;float:left;line-height:10px; color:#92b4ad;}
+.wrapper-dropdown-3 .dropdown li:first-of-type a{float:left;}
+.wrapper-dropdown-3 .dropdown li:last-of-type a{border:none;}
+.viewfr .active, .chartOp-wrapper .active, .wrapper-dropdown-3 .dropdown li:hover a{background-color:#e7e7e7;}
+.wrapper-dropdown-3.active .dropdown{opacity:1;pointer-events:auto;}
+.no-opacity .wrapper-dropdown-3 .dropdown, .no-pointerevents .wrapper-dropdown-3 .dropdown{display:none;opacity:1;/* If opacity support but no pointer-events support */ pointer-events:auto;/* If pointer-events support but no pointer-events support */ }
+.no-opacity .wrapper-dropdown-3.active .dropdown, .no-pointerevents .wrapper-dropdown-3.active .dropdown{display:block;}
+.icon-charttp1 {background-position: -4px -87px;}
+.icon-charttp2 {background-position: -155px -89px;}
+.icon-charttp3 {background-position: -185px -90px;}
+.icon-charttpS {background-position: -274px -100px;}
+#chartOpt1 {padding-left:38px;}
+#chartOpt1.icon-charttpS {background-position: -268px -91px;}
+
+/* Tooltip classes */
+.highcharts-container { overflow: visible !important; }
+.highcharts-tooltip rect{fill-opacity:0 !important;}
+.tooltip{background:#f5f5f5;-webkit-box-shadow:0px 1px 1px 1px rgba(204, 204, 204, 0.55);-moz-box-shadow:0px 1px 1px 1px rgba(204, 204, 204, 0.55);box-shadow:0px 1px 1px 1px rgba(204, 204, 204, 0.55);width:270px;padding:8px;float:left;z-index:10;}
+.tipprice{font-size:35px;padding:0 0 15px 0;}
+.tiptime{float:right;font-weight:bold;}
+.tipmainchare{padding:0 0 10px 0;}
+.tipshares{padding:6px 0;}
+.tipcon{padding:3px 0;}
+.tipcon, .tipshares, .tipdata{float:left;width:100%;}
+.tipcon span{width:20px;height:20px;display:block;float:left;border:1px solid #fff;}
+.tipcon div{float:left;padding:2px 0 0 8px;}
+.topd1,.topd2{float:left;width:30%;}
+.topd3{float:left;width:40%;}
+
+/* New CSS */
+.headingRight ul li.facebook a:hover, .headingRight ul li.twitter a:hover, .headingRight ul li.linkdin a:hover, .headingRight ul li.googleP a:hover, .refWrapper:hover, .saveButton:hover, .shareWrapper ul li.facebook a:hover, .shareWrapper ul li.twitter a:hover, .shareWrapper ul li.linkdin a:hover, .shareWrapper ul li.googleP a:hover, .chart-nav-container img:hover {opacity:.7; transition: all 0.2s ease-in-out; cursor:pointer;}
+.tabMenu ul li:hover, .tabMenu ul li:hover a:hover, .subOptions ul li:hover, .subMenu ul li:hover, .go:hover, .tabStockperfomance ul li:hover, .historicshareprice-mainnavi ul li:hover, .tabhistoricshareprice ul li:hover, .pagination ul > li > a:hover {transition: all 0.4s ease-in-out;}
+.datarow:hover {transition: all 0.2s ease-in-out;}
+#lower-graph .shareItemButton {border-radius:12px; behavior: url(../PIE.htc);position:relative;zoom: 1;}
+.highcharts-container {float:left;}
+.chart-nav-container {padding:10px 0 10px 1%; float:right;}
+.chart-nav-container span:hover {cursor:pointer;}
+.timeStandard {width:98%;float:right;}
+.timeStandard span {width: auto;display: inline-block;}
+.BuyerSellerChart {height: 300px;width: 100%;margin: 0 auto;float: left;}
+.performance-dropdown {/*width:100px;*/ float:right;}
+.performance-dropdown.wrapper-dropdown-3:after {top:6% !important;}
+#divStockPerformance .sorting{float:right;display:block;padding:5px 0px 0 10px; }
+.performance-tbl-header {display:block; float:right;}
+.tooltip > div {white-space: normal !important;}
+.subMenu ul li:last-child, .tabMenu ul li:last-child, .tabStockperfomance ul li:last-child, .historicshareprice-mainnavi ul li:last-child, .tabhistoricshareprice ul li:last-child, .subOptions ul li:last-child {border-right:none;}
+#chartOpt3{width:115px !important; font-weight:normal !important;}
+/*.exchangeDetails span.showMoreExchange {display:none;}*/
+.highcharts-tooltip .highcharts-tooltip > span {padding: 10px; border-bottom: 1px solid black;}
+.highcharts-tooltip > span {white-space:normal !important;}
+#htmlTooltip {padding: 10px; min-width:250px; background-color:#ddd;}
+.ftse_disclaimer {text-decoration:none; color:#515151; font-size:14px; font-weight:normal; float:right;}
+.ftse_disclaimer:hover {text-decoration:underline;}
+.ftse_disclaimer:visited {color:#515151;}
+.ftsedis{color:#4e96ce !important; text-decoration:none !important;}
+.subMenu ul li.custom:hover {background:#92b4ad;border-bottom:1px solid #d3d3d4;}
+.subMenu ul li.custom a:hover {color:#fff;}
+.subMenu ul li.custom.selected:hover {background:#92b4ad; border-bottom:1px solid #d3d3d4;}
+.subMenu ul li.custom.selected a:hover {color:#fff;}
+.stockper-datacol2 .performance-tbl-header, .headers .stockper-datacol2 a {text-align:left;}
+#container {background-position: center 30% !important;}
+#disclaimer_Disclaimer, #disclaimer_vwdgroup {width:100%; float:left;}
+.brokerWrapper.section {overflow:hidden;}
+.disable-tab:hover {background:#e3e3e3 !important; cursor:text !important; transition:none !important;}
+.disable-tab a:hover {color:#515151 !important; cursor:text !important;}
+
+/* Hide things for IPO Day... */
+/*#snapShotBox_SnapshotDifference1, #snapShotBox_SnapshotDifference2, .changeRow, .changePerRow, .changeImgRow, .bropen{display:none;}
+.timeRow, .lastRow, .volumeRow{width:33.3% !important;}*/
+/* Completes... */
+
+
+/*CSS Hack for IE 10 & 11*/
+@media all and (-ms-high-contrast:none){
+*::-ms-backdrop, .mainWrapper {overflow:hidden;}
+     }
+
+/*Media */
+@media only screen and (max-width:1024px) {
+.daterange .datepickertext{color:#515151; font-weight:bold !important; font-family:Arial, Helvetica, sans-serif;}
+}
+@media only screen and (max-width:640px) {
+.daterange .datepickertext{color:#515151;}
+.exchangeDetails{width:20%;}
+div.currentexchange{width:80%;}
+.lastLabel{font-size:38px;}
+.lastValueBox{width:39%;}
+.otherValueBox-data{font-size:12px;}
+.stockper-datacol5, .stockper-datacol4, .hide768{display:none;}
+.stockperformance .headers div, .stockperformance .datarow div{width:16%;}
+.stockperformance .headers div.first, .stockperformance .datarow div.first{width:20%;}
+.odMap {width:65%;}.odTime {width:35%;}
+.chartOpt{width:auto;}
+.headingRight ul {padding: 9px 6px 0;}
+.headingRight ul li {padding: 0 3px 0 0;}
+.stockperformance .headers .stockper-datacol9, .stockperformance .datarow .stockper-datacol9 {display:none;}
+}
+@media only screen and (max-width:620px) {
+.headingRight, .refWrapper, .refreshText {font-size:18px; line-height:18px;}
+div.currentexchange a {padding-left: 1.5%;}
+.snapTableLink {padding-left: 1.5%;}
+/*.subMenu ul li {width: 16.65%;}*/
+.chart-nav-container, .shareWrapper, .sectionHeading, .odWrapper .subHeading, .disclaimerWrapper, .tradeHeaders .subHeading, .odData, .stockperformance .sectionHeading, .tabStockperfomance span.hideforDesktop {padding-left:1.5%;}
+.shareSection {width: 33.334%;}
+.comparatorDetails .subHeading, .shareItem {padding-left:5%;}
+.subMenu {padding: 10px 1.2% 0 1.5%;}
+.daterange {width: 97.2%; margin: 0 1.5%;}
+.wrapper-dropdown-3:after {right: 12px;}
+.wrapper-dropdown-3 {padding-right:20px;}
+.snapDropdown {margin-right:0px;}
+.tradeData > span {padding:10px 1.5%;}
+.exchangeDetails, .sectionHeading, .topTableWrapper {padding-right:1.3%;}
+.lastValueBox {padding-left:1.2%;}
+.perfomanceTable .first {padding: 10px 0 10px 1.5% !important;}
+.stockperformance .headers .stockper-datacol8, .stockperformance .datarow .stockper-datacol8 {padding-right:1.2%;}
+.perfomanceTable .first a {padding-left:0 !important;}
+.historicshareprice .sectionHeading {padding-left:1.5%;padding-right:1.2%;}
+.historicshareprice .headers div, .historicshareprice .datarow > div {width:15%;}
+.historicshareprice .headers div:last-child, .historicshareprice .datarow > div:last-child {padding-right:1.5%; width:20%;}
+.stockperformance .headers .sorting {padding-right:0;}
+.dayChangeWrapper {padding: 0 .4% 0 1.4%;}
+.dayChangeLabel {float: right;padding: 9px 0 8px;text-align: right; width:auto;}
+.dayChangeHighLabel {width:auto;padding: 9px 0 0 .5%;}
+.dayChangeLowLabel {padding: 9px 0.5% 0 0;}
+/* Tooltip classes */
+.tooltip {width:240px;}
+.tipprice{font-size:30px;padding:0 0 10px 0;}
+.tipmainchare {padding:0 0 8px 0;}
+.tipprice {padding: 0 0 12px;}
+.tipshares {padding: 4px 0;}
+/* Sub Options */
+.subOptions ul li {width:18%;}
+.subOptions ul li:nth-child(2) {width:28%;}
+}
+
+@media only screen and (max-width:570px) {
+.sharingLabel, .headingRight ul {display:none;}
+.ui-datepicker-month, .ui-datepicker-year{padding:0;margin:2px 2px 0 !important;}
+.refWrapper {padding-right:0%;float:right;}
+.otherValueBox,.otherValueBox-lable{display:none;}.changeData{padding:21px 0 0 5%;}.lastValueBox{width:60%}
+.stockper-datacol3, .otherValueBox,.otherValueBox-lable{display:none;}
+.lastValueBox{width:98%;}
+.tabMenu{position:relative;background:#92b4ad;padding:0%;width:100%;}
+.tabMenu ul{display:none;}
+.tabMenu ul li{width:100%;border-right:none;border-bottom:1px solid #fff;box-shadow:none;}
+.tabMenu ul li a{padding:10px 2% 10px;text-align:left;width:96%;}
+.tabStockperfomance{position:relative;background:#00418C;padding:0%;width:100%;}
+.tabStockperfomance ul{display:none;}
+.tabStockperfomance ul li{width:100%;border-right:none;border-bottom:1px solid #fff;box-shadow:none;}
+.tabStockperfomance ul li a{padding:17px 2% 19px;text-align:left;width:96%;}
+.tabhistoricshareprice{position:relative;background:#00418C;padding:0%;width:100%;}
+.tabhistoricshareprice ul{display:none;}
+.tabhistoricshareprice ul li{width:100%;border-right:none;border-bottom:1px solid #fff;box-shadow:none;}
+.tabhistoricshareprice ul li a{padding:17px 2% 19px;text-align:left;width:96%;}
+.hideforDesktop{display:block;}
+.dayChangeChart{width:89%;}.dayChangeLowLabel,.dayChangeHighLabel,.dayChangeLabel{text-align:center;}
+.headingLeft{width:100%;}
+.comparatorDetails .subHeading{padding:9px 0 6px 1.5%;}
+.shareItem{padding:7px 0 7px 1.5%;}
+.blank{display:none;}
+.mainChart{width:100%;}
+.mainChartOuter{margin:0;}
+.chartControls{width:100%;min-height:64px;margin:0;}
+.control{float:left;width:19.6%;height:28px;box-shadow:0 -11px 10px -10px #999999 inset;border-bottom:1px solid #C0C0C0;border-right:1px solid #DDDDDD;margin-right:1px;}
+.control.active{border-bottom:1px solid #DDDDDD;}
+.arrowBox{display:none;}
+.subSection .subHeading{width:100%;}
+.collapse_trigger{cursor:pointer;float:left;margin-bottom:1px;line-height:20px;}
+.shareSection{width:50%;}
+.odMap{width:60%;}.odTime{width:40%;}
+.tradeData .hideforDesktop, .askWrapper .hideforDesktop, .brokerData .hideforDesktop{display:none;}
+.stockperformance .headers div, .stockperformance .datarow div{width:18%;}
+.stockperformance .headers div.first, .stockperformance .datarow div.first{width:28%;}
+.shareSection{width:100%;}
+.tabhistoricshareprice ul li.selected, .tabStockperfomance ul li.selected, .tabMenu ul li.selected{background:#e3e3e3;}
+.tabhistoricshareprice ul li.selected a, .tabStockperfomance ul li.selected a, .tabMenu ul li.selected a{color:#515151;}
+.odWrapper .subHeading.right{text-align:right;}
+.comparatorWrapper .active{border-top:solid 1px #00418C;background:#A7C98F !important;}
+.sectionHeading .left{width:29%;}
+.datepickertext{width:36%;}
+.exchangeDetails span.showMoreExchange{margin:9px 2% 27px 0;}
+.headingRight ul{float:right;display:none;}
+.chartOpt{width:auto;}
+/*570 view*/
+.datesec{width:auto;}
+.sectionHeading .datesec{width:100%; padding:0 .5% 0 0;}
+.wrapper-dropdown-3{padding:0px 22px 2px 5px;}
+.stockperformance .sectionHeading .left{width:65%;}
+.historicshareprice .sectionHeading .left {width:100%;}
+.sectionHeading .left{width:100%;}
+.datepickertext{width:38.5%;}
+.tabMenu .select {width:95% !important;}
+.tabMenu span.arrowClick {margin-right: 1.5%;}
+/*disabled hover effect on small devices*/
+.subOptions ul li:hover {background-color:#F5F5F5;}
+.pagination ul > li > a:hover {background-color: #DADADA;}
+.tabStockperfomance ul li:hover, .tabMenu ul li:hover, .tabhistoricshareprice ul li:hover {background-color:#92b4ad;}
+.tabMenu ul li a:hover, .tabhistoricshareprice ul li a:hover, .tabStockperfomance ul li a:hover, .subOptions ul li a:hover {color:#fff;}
+.subMenu ul li:hover{background:#92b4ad;border-bottom:1px solid #d3d3d4;}
+.subMenu ul li.selected {background:#92b4ad;border-bottom:1px solid #d3d3d4;}
+.subMenu ul li.selected a:hover {color:#fff;}
+.subMenu ul li a:hover {color:#fff;}
+.pagination ul > li > a:hover {background:#AEAEAE;color: white;}
+.pagination ul > li.active > a:hover {background:#00418C;color: white;}
+.go:hover{}
+.headingRight ul li.facebook a:hover, .headingRight ul li.twitter a:hover, .headingRight ul li.linkdin a:hover, .headingRight ul li.googleP a:hover, .refWrapper:hover, .saveButton:hover, .shareWrapper ul li.facebook a:hover, .shareWrapper ul li.twitter a:hover, .shareWrapper ul li.linkdin a:hover, .shareWrapper ul li.googleP a:hover, .chart-nav-container img:hover {opacity:1;}
+
+.dayChangeHighLabel {padding-left:1%;}
+.dayChangeLowLabel {padding-right:1%;}
+.wrapper-dropdown-3:after {right:14px;}
+.tabStockperfomance span.tabStockperfomanceClick {padding: 17px 1.3%;}
+.tabhistoricshareprice span.hideforDesktop {padding-left:1.5%;}
+/* Tooltip classes */
+.tooltip {width:220px;}
+.tipprice{font-size:28px;padding:0 0 10px 0;}
+.tipmainchare {padding:0 0 6px 0;}
+.tipprice {padding: 0 0 10px;}
+.tipshares {padding: 2px 0;}
+.tipcon span {width:16px; height:16px;}
+.tipcon div{float:left;padding:0 0 0 6px;width:90%;}
+.ui-datepicker .ui-datepicker-title {
+	margin: -3px 2.3em;
+	}
+}
+
+@media only screen and (max-width:550px) {
+ul.exchangeList1 li.exchangeBox, ul.exchangeList li.exchangeBox{font-size:30px;}ul.exchangeList1 li{font-size:14px;}
+.dateto, .hide640{display:none;}
+.stockperformance .headers div, .stockperformance .datarow div{width:18%;}
+.stockperformance .headers div.first, .stockperformance .datarow div.first{width:28%;}
+.datesec{width:100%; padding:0 2% 0 0;}
+.daterange .datepickertext{width:40.5%;}
+.datepickertext{width:40.9%;}
+.chartOpt{padding:8px 10% 2px 5%;width:100%;}
+.wrapper-dropdown-3 .dropdown li span, .wrapper-dropdown-3 span a span{display:block;}
+.wrapper-dropdown-3{width:99%;}
+#chartOpt3 span a span{padding:5px 0;}
+.fr .wrapper-dropdown-3:after{top:2% !important;}
+.exchangeDetails span.showMoreExchange{margin:13px 2% 22px 0;}
+.chartOpt {padding: 8px 1% 2px 5%;}
+.historicshareprice .headers div.first, .historicshareprice .datarow div.first {width: 22%;}
+.historicshareprice .headers div, .historicshareprice .datarow > div {width: 14.5%;}
+.tradeHeaders .subHeading {padding-right:1.5%;}
+.lastRow {width: 22%;}
+.changeRow {width: 22%;}
+.changePerRow {width: 22%;}
+}
+@media only screen and (max-width:480px) {
+.chartOpt{padding:0px .5% 0px 5%;width:32%;}
+.datesec{width:68%;}
+.sectionHeading .left{width:36%;/*padding-left:1%;*/}
+.sectionHeading .datesec{width:100%; float:left;}
+.datepickertext{width:39.5%;}
+.daterange .datepickertext{width:34%;}
+#divStockPerformance .sorting {padding: 5px 0 0 5px;}
+.stockperformance .headers div.stockper-datacol2, .stockperformance .datarow div.stockper-datacol2 {width:22%;}
+.stockperformance .headers div, .stockperformance .datarow div {width:18%;}
+.stockperformance .headers div.first, .stockperformance .datarow div.first {width:24%}
+.historicshareprice .headers div:last-child, .historicshareprice .datarow div:last-child {width:20%;}
+.tabMenu span.hideforDesktop {padding-left:1.5%;}
+/* Tooltip classes */
+.tooltip {width:200px;}
+.tipprice{font-size:24px;padding:0 0 8px 0;}
+.tipmainchare {padding:0 0 6px 0;}
+.tipprice {padding: 0 0 8px;}
+.tipshares {padding: 2px 0;}
+.tipcon span {width:12px; height:12px; margin-top:3px;}
+/* Sub Options */
+.subOptions ul li a {font-size: 14px;}
+}
+@media only screen and (max-width:450px) {
+div.currentexchange,.exchangeSelect ul li a{width:83%;font-size:20px;padding:0;}div.currentexchange div span,.exchangeSelect ul li span{font-size:16px;}
+.exchangeSelect ul li a{width:100%;}
+.exchangeDetails{width:17%;padding:8px 1.2% 0 0;}ul.exchangeList{width:65%;}
+ul.exchangeList1 li.exchangeBox, ul.exchangeList li.exchangeBox{font-size:20px;}
+.shareDetails, .marketDetails{width:100%;}.snapTableDetails .marketDetails .fl{padding:0;}
+.stockper-datacol8 {display:none;}
+.stockperformance .headers div.first, .stockperformance .datarow div.first, .historicshareprice .headers div.first, .historicshareprice .datarow div.first{font-weight:normal;}
+.perfomanceTable{font-size:14px;}
+.stockperformance .headers div, .stockperformance .datarow div{width:21%;}
+.stockperformance .headers div.first, .stockperformance .datarow div.first{width:37%;}
+.datesec{width:100%;}
+.datepickertext{width:38.9%;}
+.stockperformance .showoptions{width:100px; font-size:14px;}
+.datesec{padding:10px 0 0 0;}
+.shareSection{width:100%;}
+.shareItem{padding: 3px 0 3px 1.5%;}
+.shareItemButton{background:#FFF;width:15px;height:15px;}
+.shareItemLabel{padding:0px 0 0 9px;}
+.tradeData.first span{font-size:12px;}
+.subMenu{padding:5px 0 0 0;}
+.daterange{padding:8px 0 0 0;}
+.daterange .datepickertext{width:38.8%;}
+.daterange .datesec{padding:0 2%;}
+#chartOpt3 {width: 110px !important;}
+.historicshareprice .headers > div, .historicshareprice .datarow > div, .historicshareprice .headers div, .datarow div{width:14%;}
+.historicshareprice .headers div.first, .historicshareprice .datarow div.first{width:22%;}
+.historicshareprice .headers div:last-child, .historicshareprice .datarow div:last-child {width:22%;}
+.headingSection h1{font-size:30px;}.refreshText{font-size:17px;padding-top:14px;}
+.shareLabel{font-size:14px;}
+.sectionHeading .left{font-size:14px;}
+.brokerData .col1{padding-left:2% !important;}
+.brokerHeaders .col1{padding-left:2% !important;}
+.subSection .col1{padding-left:2%;}
+.brokerHeaders span{padding:0 6%;}
+.brokerData span{padding:10px 6% 10px 0;}
+/* Trades - 320 view*/
+.tradeData span > {padding:10px 1.5%;text-align:right;margin-bottom:0;}
+.tradeData span.left{text-align:left;}
+.tradeData span.right{text-align:right !important;}
+.timeRow{width:50%;}
+.lastRow{width:50%;}
+.changeRow{width:54%;}
+.changePerRow{width:100%;}
+.changeImgRow{width:20%;text-align:center;}
+.volumeRow{width:50%;}
+.changeRowLabel{width:26%;}
+
+/*  ORDER DEPTH - 320 view*/
+.odTime{padding-top:3px;}
+.odMap{position:inherit;}
+.odLabel{position:inherit;}
+.odLabel.left{margin-right:0;}
+.odLabel.right{margin-left:0;}
+.collapsecon{width:100%;}
+.odMap, .odTime{width:100%;}
+.odLabel.right{text-align:left;font-weight:bold;}
+.odLabel.left{float:right;text-align:right;font-weight:bold;}
+
+/*  TRADES BY BROKER - 320 view*/
+.subSection{width:100%;}
+.changeImgRow, .tradeHeaders, .bidaskouter, .askWrapper .right, .bidaskouter{display:none;}
+.tradeData .hideforDesktop, .askWrapper .hideforDesktop{display:block;}
+.exchangeDetails span.showMoreExchange{margin:6px 2% 16px 0;}
+
+.stockperformance .headers div.first, .stockperformance .datarow div.first {width:32%;}
+.stockperformance .headers div.stockper-datacol2, .stockperformance .datarow div.stockper-datacol2 {width:26%;}
+.stockperformance .headers div, .stockperformance .datarow div {width:21%;}
+.refWrapper {padding-right:6%;}
+.dayChangeChart {width: 85%;}
+.dayChangeLowLabel {padding-right:3%;}
+.fr .wrapper-dropdown-3:after {top: 0 !important;}
+/* Tooltip classes */
+.tooltip {width:180px;}
+.tipprice{font-size:20px;padding:0 0 6px 0;}
+.tipmainchare {padding:0 0 6px 0;}
+.tipprice {padding: 0 0 6px;}
+.tipshares {padding: 2px 0;}
+}
+@media only screen and (max-width:360px) {
+.daterange .datepickertext{width:36%;}
+.chartOpt{padding-right:0;}
+.sectionHeading .left{padding-left:0; width:52%;}
+.sectionHeading .datesec{width:100%;}
+.datepickertext{width:36%;}
+.dayChangeWrapper{padding:0 1.5% 0 1%;}
+.exchangeDetails{width:30%;}
+div.currentexchange{width:70%;}
+.exchangeSelect ul li a{width:95%;}
+.tabMenu span.arrowClick {width:11px !important;}
+.wrapper-dropdown-3:after {top:17%;}
+.hide320{display:none;}
+.historicshareprice .headers > div, .historicshareprice .datarow > div, .historicshareprice .headers div, .datarow div{width:21%;}
+.historicshareprice .headers div.first, .historicshareprice .datarow div.first{width:25%;}
+.historicshareprice .headers div:last-child, .historicshareprice .datarow div:last-child {width:33%;}
+.stockperformance .headers .stockper-datacol2, .stockperformance .datarow .stockper-datacol2 {width:28%;}
+.stockperformance .headers div, .stockperformance .datarow div{width:20%;}
+.stockperformance .headers div.first, .stockperformance .datarow div.first{width:32%;}
+.tabMenu .select {width: 94% !important;}
+.stockperformance .headers .sorting {padding:5px 2px 0 5px;}
+.dayChangeChart {width: 83%;}
+div.currentexchange a {padding:0 0 0 1.5%;}
+.dayChangeLowLabel {padding: 9px 3% 0 .5%;}
+.stockperformance .headers div.stockper-datacol2, .stockperformance .datarow div.stockper-datacol2 {width:28%;}
+.subOptions ul li {width:22%;}
+.subOptions ul li a {font-size: 14px;padding: 12px 0;}
+.subOptions ul li:nth-child(3) {width:12%;}
+/* Tooltip classes */
+.tooltip {width:220px; padding:6px;}
+.tipprice{font-size:14px;padding:0;}
+.tipmainchare {padding:0 0 2px 0;}
+.tipprice {padding: 0;}
+.tipshares {padding: 0;}
+
+.subMenu ul li.TimeHorizon5, .subMenu ul li.TimeHorizon6 {display:block;}
+.subMenu ul li.TimeHorizon4 {border-right:1px solid #fff;}
+.subMenu .ulTimeHorizonChart li {width:33.33%;}
+.subMenu ul li:last-child{width:25%; display:none;}
+.subMenu ul li {width:20%; border-bottom:1px solid #fff;}
+.ShareDiv, .IndicesDiv{width:100% !important;}
+.daterange .datesec {display:none;}
+.daterange {margin: 0; width: 100%; padding:0;}
+.tipdata {display:none;}
+.pagination ul > li > a, .pagination ul > li > span {padding: 2px 9px;}
+.exchangeSelect ul {top: 107px;}
+/* Sub Options */
+.subOptions ul li {width:17%;}
+.subOptions ul li a {font-size: 14px;padding: 13px 0;}
+.subOptions ul li.first {width:21%;}
+.subOptions ul li:nth-child(2) {width:32%;}
+.subOptions ul li:nth-child(3) {width:13%;}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+/* Safari and Chrome */
+.dayChangeWrapper {width:100%;}
+.dayChangeChart {width: 81%;}
+.tabMenu span.arrowClick {margin-right: 1.8%;}
+}
+
+}
+
+@media only screen and (max-width:320px) {
+.daterange .datesec{padding:0 2%;}
+.daterange .datepickertext{width:34.5%;}
+.datepickertext{width:33%;}
+.exchangeDetails{width:27%;}
+div.currentexchange {line-height:18px;}
+div.currentexchange, .exchangeSelect ul li a{width:73%;}
+div.currentexchange a {/*font-size:28px;*/ line-height:50px;}
+.headingRight {width: 130px;}
+.timeStandard {float:right; width:100% !important;}
+.timeStandard span {float:right !important; width:auto !important;}
+.exchangeDetails span {/*float: left;*/ padding: 0 1%;/*text-align: left;width: 30%;*/}
+.exchangeDetails {position:relative;}
+.showMoreExchange {margin:0; bottom:0;}
+.exchangeDetails span.showMoreExchange {bottom: -45px;position: absolute;right: 0;}
+.daterange {margin:0; width:100%;}
+.exchangeSelect ul {top: 134px;}
+.shareWrapper ul li {padding-right:3px;}
+.subMenu ul li a {font-size:14px;}
+.subMenu ul li {width:20%;}
+.dayChangeChart {width: 83%;}
+
+.historicshareprice .headers > div, .historicshareprice .datarow > div, .historicshareprice .headers div, .datarow div{width:20%;}
+.historicshareprice .headers div.first, .historicshareprice .datarow div.first{width:27%;}
+.historicshareprice .headers div:last-child, .historicshareprice .datarow div:last-child {width:33%;}
+.stockperformance .headers .stockper-datacol6, .stockperformance .datarow .stockper-datacol6{display:none;}
+.stockperformance .headers div.first, .stockperformance .datarow div.first{width:38%;}
+.stockperformance .headers div, .stockperformance .datarow div, .stockperformance .headers div.stockper-datacol2, .stockperformance .datarow div.stockper-datacol2 {width:31%;}
+.stockperformance .sectionHeading .left {width: 50%;}
+.exchangeDetails span.showMoreExchange {margin: 6px 1.5% 16px 0;}
+.refWrapper {padding-right: 4%; width:100%;}
+.pagination ul > li > a, .pagination ul > li > span {padding: 1px 7px;}
+.subOptions ul li a {font-size: 14px;padding: 12px 0;}
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+.dayChangeChart {width: 81%;}
+.dayChangeLowLabel {padding-right:4%;}
+}
+}
+
+/*Date Picker*/
+.date-picker-icn {background-position:0px -118px; display:inline-block;}
+.ui-datepicker-trigger{padding:0 3px;vertical-align:middle;width:29px !important;*width:23px !important;height:27px !important;margin-top:-4px;}
+#datepicker:before { position:absolute; top:-10px; left:50%; margin-left:-5px; display:block; content:""; width:0; height:0; border-bottom:5px solid #444751; border-top:5px solid transparent; border-left:5px solid transparent; border-right:5px solid transparent; }
+#datepicker { position:relative; background:#444751; display:inline-block; padding:5px; width:250px; -webkit-border-radius:4px; -moz-border-radius: 4px; border-radius: 4px; -webkit-box-shadow:0 1px 0 #FFF; -moz-box-shadow:0 1px 0 #FFF; box-shadow:0 1px 0 #FFF; }
+.ui-datepicker-header { -webkit-border-radius:3px 3px 0 0; -moz-border-radius:3px 3px 0 0; border-radius:3px 3px 0 0; -webkit-box-shadow:0 1px 0 rgba(255, 255, 255, .3) inset; -moz-box-shadow:0 1px 0 rgba(255, 255, 255, .3) inset; box-shadow:0 1px 0 rgba(255, 255, 255, .3) inset; background:#92b4ad; background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#92b4ad), to(#92b4ad)); background-image: -moz-linear-gradient(top, #92b4ad, #92b4ad 100%); color:#FFF; height:32px; position:relative; }
+.ui-datepicker-header:after { background: transparent url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAACCAYAAACKVvbTAAAAKUlEQVQIHWP8//8/Awh8/PgRwgDzIAQ/Pz8jiMUCExMQEDCBsWE0zAAA8dYKZBkmJoYAAAAASUVORK5CYII=') repeat-x; position:absolute; bottom:0px; left:0; display:block; width:99%; height:2px; content:""; }
+.ui-datepicker-prev:hover { border-right:5px solid #000; }
+.ui-datepicker-prev { cursor:pointer; float:left; display:block; border-bottom:5px solid transparent; border-top:5px solid transparent; border-left:5px solid transparent; border-right:5px solid #FFF; text-indent:-9999px; height:0; width:0; margin-top:10px; margin-left:5px; }
+.ui-datepicker-next:hover { border-left:5px solid #000; }
+.ui-datepicker-next { cursor:pointer; float:right; display:block; border-bottom:5px solid transparent; border-top:5px solid transparent; border-left:5px solid #FFF; border-right:5px solid transparent; text-indent:-9999px; height:0; width:0; margin-top:10px; margin-right:5px; }
+.ui-datepicker-title { text-align:center; line-height:30px; font-size:12px; font-weight:bold; text-shadow:0 1px 1px #632631; }
+.ui-datepicker-calendar{width:100%; background:#FFF; padding:5px 5px 9px 5px; -webkit-border-radius:0 0 5px 5px; -moz-border-radius:0 0 5px 5px; border-radius:0 0 5px 5px; border-collapse:collapse !important;box-shadow: 0px 4px 16px #686868;}
+.ui-datepicker th {color:#63697A; text-align: center; font-weight: bold; border: 0; padding-bottom:5px; border:1px solid #EDEDED;}
+.ui-datepicker td {border:1px solid #EDEDED;}
+.ui-datepicker-current-day, .ui-datepicker-current-day a{background: none repeat scroll 0 0 #92b4ad;color: #ffffff !important; }
+.ui-datepicker td span, .ui-datepicker td a { display: block; color:#63697A; line-height:30px; width:30px; text-align: center; text-decoration: none; margin:0 0 2px 0; }
+.ui-datepicker td a:hover { background:#92b4ad;color:#FFF; font-weight:bold;  }
+.datepickertext{padding:7px 5px;}
+.ui-datepicker-month, .ui-datepicker-year{padding:0;margin:6px 2px 0;}
+
+.ui-helper-hidden {
+	display: none;
+}
+.ui-helper-hidden-accessible {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+}
+.ui-helper-reset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	line-height: 1.3;
+	text-decoration: none;
+	font-size: 100%;
+	list-style: none;
+}
+.ui-helper-clearfix:before,
+.ui-helper-clearfix:after {
+	content: "";
+	display: table;
+	border-collapse: collapse;
+}
+.ui-helper-clearfix:after {
+	clear: both;
+}
+.ui-helper-clearfix {
+	min-height: 0; /* support: IE7 */
+}
+.ui-helper-zfix {
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	opacity: 0;
+	filter:Alpha(Opacity=0);
+}
+
+.ui-front {
+	z-index: 100;
+}
+
+/* Interaction Cues
+----------------------------------*/
+.ui-state-disabled {
+	cursor: default !important;
+}
+
+/* Icons
+----------------------------------*/
+
+/* states and images */
+.ui-icon {
+	display: block;
+	text-indent: -99999px;
+	overflow: hidden;
+	background-repeat: no-repeat;
+}
+
+/* Misc visuals
+----------------------------------*/
+
+/* Overlays */
+.ui-widget-overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+.ui-datepicker {
+	/*width: 17em;*/
+	display: none;
+}
+.ui-datepicker .ui-datepicker-header {
+	position: relative;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+	top: 1px;
+}
+.ui-datepicker .ui-datepicker-prev {
+	left: 2px;
+}
+.ui-datepicker .ui-datepicker-prev-hover {
+	left: 1px;
+}
+.ui-datepicker .ui-datepicker-next-hover {
+	right: 1px;
+}
+.ui-datepicker .ui-datepicker-prev span,
+.ui-datepicker .ui-datepicker-next span {
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -8px;
+	top: 50%;
+	margin-top: -8px;
+}
+.ui-datepicker .ui-datepicker-title {
+	margin: 0 2.3em;
+	line-height: 1.8em;
+	text-align: center;
+}
+.ui-datepicker table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 0 0 .4em;
+}
+.ui-datepicker td span,
+.ui-datepicker td a {
+	display: block;
+	text-decoration: none;
+}
+.ui-datepicker .ui-datepicker-buttonpane {
+	background-image: none;
+	margin: .7em 0 0 0;
+	padding: 0 .2em;
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+.ui-datepicker .ui-datepicker-buttonpane button {
+	float: right;
+	margin: .5em .2em .4em;
+	cursor: pointer;
+	padding: .2em .6em .3em .6em;
+	width: auto;
+	overflow: visible;
+}
+.ui-datepicker .ui-datepicker-buttonpane button.ui-datepicker-current {
+	float: left;
+}
+
+/* with multiple calendars */
+.ui-datepicker.ui-datepicker-multi {
+	width: auto;
+}
+.ui-datepicker-multi .ui-datepicker-group {
+	float: left;
+}
+.ui-datepicker-multi .ui-datepicker-group table {
+	width: 95%;
+	margin: 0 auto .4em;
+}
+.ui-datepicker-multi-2 .ui-datepicker-group {
+	width: 50%;
+}
+.ui-datepicker-multi-3 .ui-datepicker-group {
+	width: 33.3%;
+}
+.ui-datepicker-multi-4 .ui-datepicker-group {
+	width: 25%;
+}
+.ui-datepicker-multi .ui-datepicker-group-last .ui-datepicker-header,
+.ui-datepicker-multi .ui-datepicker-group-middle .ui-datepicker-header {
+	border-left-width: 0;
+}
+.ui-datepicker-multi .ui-datepicker-buttonpane {
+	clear: left;
+}
+.ui-datepicker-row-break {
+	clear: both;
+	width: 100%;
+	font-size: 0;
+}
+.TradeByBorkerChartToolTip {
+    background:#f5f5f5;padding:3px;float:left;  border: 1px solid #000;position:absolute;display:inline-block;border-radius:3px;white-space:nowrap;top:25px;
+}
+
+#popup_message
+{width:200px;
+}
+g.highcharts-tooltip {
+    display: none;
+}
